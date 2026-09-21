@@ -1,0 +1,4 @@
+# Dependências específicas deste sistema.
+# Recomendado: crie um ambiente virtual dedicado dentro desta pasta
+# (python -m venv .venv) e instale as dependências nele, para evitar
+# conflitos de versão com outros sistemas do Python Hub.

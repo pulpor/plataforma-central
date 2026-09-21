@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mounting systems/ lets you edit/add systems without rebuilding the image.
+      - ./systems:/app/systems
+      - ./backend/data:/app/backend/data
+    env_file:
+      - ./backend/.env
+    environment:
+      - PH_CORS_ORIGINS=http://localhost:5173
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend

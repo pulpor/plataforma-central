@@ -1,0 +1,25 @@
+{
+  "name": "Job Hunter",
+  "description": "Pesquisa oportunidades de emprego automaticamente em múltiplas fontes.",
+  "icon": "\ud83d\udcbc",
+  "category": "Carreira",
+  "repository": "",
+  "command": "python demo_main.py",
+  "timeout_seconds": 300,
+  "status": "ready",
+  "output": {
+    "mode": "file",
+    "columns": [
+      { "key": "empresa", "label": "Empresa", "type": "text" },
+      { "key": "cargo", "label": "Cargo", "type": "text" },
+      { "key": "local", "label": "Local", "type": "text" },
+      { "key": "salario", "label": "Salário", "type": "currency" },
+      { "key": "modelo", "label": "Modelo", "type": "text" },
+      { "key": "link", "label": "Link", "type": "url" }
+    ]
+  },
+  "export": {
+    "enabled": true,
+    "filename_prefix": "job-hunter"
+  }
+}

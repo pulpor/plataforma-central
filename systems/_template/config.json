@@ -1,0 +1,22 @@
+{
+  "name": "Nome do Sistema",
+  "description": "Descrição curta do que este sistema faz.",
+  "icon": "\ud83e\udde9",
+  "category": "Outros",
+  "repository": "https://github.com/seu-usuario/seu-repositorio",
+  "command": "python main.py",
+  "timeout_seconds": 600,
+  "status": "ready",
+  "output": {
+    "mode": "file",
+    "columns": [
+      { "key": "campo_1", "label": "Campo 1", "type": "text" },
+      { "key": "campo_2", "label": "Campo 2", "type": "currency" },
+      { "key": "link", "label": "Link", "type": "url" }
+    ]
+  },
+  "export": {
+    "enabled": true,
+    "filename_prefix": "meu-sistema"
+  }
+}

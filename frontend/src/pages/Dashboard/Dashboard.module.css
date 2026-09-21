@@ -1,0 +1,39 @@
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 32px 0 20px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.total {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.status {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.errorStatus {
+  color: var(--danger);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

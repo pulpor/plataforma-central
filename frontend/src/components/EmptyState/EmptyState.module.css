@@ -1,0 +1,27 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 24px;
+  color: var(--text-secondary);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.description {
+  margin: 0 0 16px;
+  font-size: 13px;
+  max-width: 380px;
+}

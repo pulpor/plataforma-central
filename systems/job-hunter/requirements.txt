@@ -1,0 +1,4 @@
+# Dependências do Job Hunter.
+# O script de demonstração (demo_main.py) usa apenas a biblioteca padrão.
+# Ao conectar seu sistema real, liste aqui as dependências dele e instale-as
+# em um ambiente virtual dedicado (python -m venv .venv).
